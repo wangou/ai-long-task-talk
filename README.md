@@ -45,6 +45,28 @@
 
 ![设计稿 vs Flutter Demo 实现](assets/figma-vs-demo-comparison.png)
 
+这个 prompt 不是一开始就写成最终版本的，而是先用 Superpowers 把“还原 Figma 页面”这个模糊想法拆清楚。
+
+中间有一轮比较关键的 `$brainstorming`：目标是固定 390 x 844 静态还原，但不实现 iOS 状态栏，所以需要先决定顶部空间怎么处理。Superpowers 给了两个方案，我最后选了 A：保留原顶部安全区，让画面和 Figma 的视觉关系更接近。
+
+![Superpowers brainstorming 顶部处理方案](assets/superpowers-brainstorming-top-options.png)
+
+完整对话大概是这样的：先探索仓库和已有 demo，再澄清目标、提出方案、确认技术路线和验收方式，最后沉淀成 Ralph 可以直接读取的 prompt 文件。
+
+![Superpowers 生成 Ralph prompt 的真实对话](assets/superpowers-prompt-generation-transcript.png)
+
+所以这里真正值得复用的不是某一句固定 prompt，而是这条路径：
+
+```text
+模糊想法
+  ↓
+$brainstorming：澄清目标、范围、方案和验收
+  ↓
+writing-plans / Plan Mode：拆执行步骤
+  ↓
+Ralph prompt：写成可循环执行的任务说明
+```
+
 如果只说：
 
 > 帮我把这个 Figma 页面还原成 Flutter。
