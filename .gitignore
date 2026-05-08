@@ -1,0 +1,17 @@
+.DS_Store
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+
+# IDE files
+.idea/
+*.iml
+
+# Logs and local env
+*.log
+.env
+.env.*
