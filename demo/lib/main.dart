@@ -135,7 +135,7 @@ class _StatusBar extends StatelessWidget {
             width: 54,
             height: 20,
             child: Text(
-              '9:41',
+              '10:18',
               textAlign: TextAlign.center,
               style: _TextStyles.statusTime,
             ),
@@ -220,7 +220,7 @@ class _PostCard extends StatelessWidget {
   final List<String> imageAssets;
 
   static const String _bodyText =
-      'Watched the sunset with him today, so beautiful and romantic 💕 Hope every day can be this sweet!';
+      'Flutter preview is live, with local assets and a clean golden test.';
 
   @override
   Widget build(BuildContext context) {
@@ -281,7 +281,7 @@ class _CardHeader extends StatelessWidget {
                 SizedBox(
                   height: 25,
                   child: Text(
-                    'Jane',
+                    'Mia',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: _TextStyles.name,
@@ -291,7 +291,7 @@ class _CardHeader extends StatelessWidget {
                 SizedBox(
                   height: 15,
                   child: Text(
-                    'Today - 10:30 AM - Corner window light',
+                    'Just now - Flutter preview',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: _TextStyles.meta,

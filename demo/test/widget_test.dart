@@ -26,7 +26,7 @@ void main() {
 
     expect(
       find.text(
-        'Watched the sunset with him today, so beautiful and romantic 💕 Hope every day can be this sweet!',
+        'Flutter preview is live, with local assets and a clean golden test.',
       ),
       findsOneWidget,
     );
